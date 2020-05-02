@@ -1,0 +1,138 @@
+.header_label {
+    background-color: orange;
+    width: 100vw;
+    height: 80px;
+    line-height: 80px;
+    font-size: 2rem;
+}
+#MainText {
+    font-size:3.5rem;
+    vertical-align: middle;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+} 
+.sidenav .navClick {
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav .navClick:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav .navLogout {
+    display: inline-block;
+    color: rgb(190, 52, 52);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    line-height: 40px;
+}
+.sidenav .navLogout:hover {
+    color: red;
+}
+.navText {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    white-space : nowrap;
+}
+.navMainText {
+    padding: 8px 8px 6vh 8px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+} 
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.FileList {
+    height: 60px;
+    font-size: 1.5rem;
+    line-height: 60px;
+    border-bottom: 2px solid rgba(82, 83, 85, 0.288);
+    padding: 0 20px 0 20px;
+    display: flex;
+}
+#NoFile {
+    font-size: 2rem;
+    justify-content: center;
+    padding-top: 20vh;
+}
+.notextover {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#NavMenu_In {
+    height:inherit;
+    display: inline-block;
+    padding-left: 15px;
+    position: absolute;
+    left: 0;
+}
+#NavMenu_Out {
+    display: inline-block;
+    height: inherit;
+    width: 100vw;
+    position: relative;
+}
+#NavMenu {
+    height: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+}
+.progressText {
+    font-size: 1.25rem;
+    display: inline-block;
+}
+.progressName {
+    width: calc(100% - 70px);
+}
+.progressPercent {
+    width: 60px;
+    text-align: right;
+}
+.shortcut-box {
+    display: inline-block;
+    width: calc((100% - 32px) / 3);
+    font-size: 1.1rem;
+    padding: 30px 0 30px 80px;
+}
+#FileListView {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+#FileListView::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

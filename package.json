@@ -1,0 +1,15 @@
+{
+  "name": "bcloud-app",
+  "version": "1.0.0",
+  "description": "app for bcloud",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^8.2.5",
+    "jquery": "^3.5.0"
+  }
+}
