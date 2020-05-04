@@ -1,7 +1,7 @@
 {
   "name": "bcloud-app",
-  "version": "1.0.0",
-  "description": "app for bcloud",
+  "version": "1.0.1",
+  "description": "App for bcloud",
   "main": "main.js",
   "scripts": {
     "build:osx": "electron-builder --mac",
@@ -10,7 +10,8 @@
     "build:linux64": "electron-builder --linux --x64",
     "build:win": "npm run build:win32 && npm run build:win64",
     "build:win32": "electron-builder --win --ia32",
-    "build:win64": "electron-builder --win --x64"
+    "build:win64": "electron-builder --win --x64",
+    "start": "electron ."
   },
   "author": "",
   "license": "MIT",
